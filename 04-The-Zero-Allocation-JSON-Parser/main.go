@@ -115,4 +115,8 @@ func SensorParser(r io.Reader) error {
 }
 
 func main() {
+	err := SensorParser(io.Reader(nil))
+	if err != nil {
+		log.Print(err)
+	}
 }
